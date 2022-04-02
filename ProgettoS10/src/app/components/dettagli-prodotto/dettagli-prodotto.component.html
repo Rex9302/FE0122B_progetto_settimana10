@@ -1,0 +1,28 @@
+<div class="container mt-5 h-100">
+  <div class="row" *ngIf="dettagliProdotto; else loading">
+    <div class="card m-auto" style="width: 350px">
+      <img src="{{ dettagliProdotto.url }}" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title fs-3">{{ dettagliProdotto.name }}</h5>
+        <p class="card-text fs-6">{{ dettagliProdotto.description }}</p>
+        <p class="card-text fs-3 text-success">
+          {{ dettagliProdotto.price }} €
+        </p>
+        <a class="btn btn-success fs-5" (click)="aggiungi(dettagliProdotto)"
+          >Aggiungi</a
+        >
+        <a class="btn btn-primary fs-5 ms-3" (click)="back()">Indietro</a>
+      </div>
+      <div *ngIf="display" class="mt-3">
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading">Prodotto aggiunto al carrello!</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ng-template #loading>
+    <h1 class="d-inline me-3">Caricamento</h1>
+    <span class="spinner-grow" role="status" style="color: orangered"></span>
+  </ng-template>
+</div>
+

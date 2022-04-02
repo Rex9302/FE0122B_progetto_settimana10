@@ -1,0 +1,32 @@
+{
+  "products":[
+    {
+      "id":1,
+      "name": "Samsung Galaxy S22",
+      "price": 900,
+      "description": "L'ultimo nato nella famiglia Galaxy",
+      "url":"assets/img/GalaxyS22.jpg"
+    },
+    {
+      "id":2,
+      "name": "OnePlus 10 Pro",
+      "price": 990,
+      "description": "Il flagship di OnePlus",
+      "url":"assets/img/10pro.jpeg"
+    },
+    {
+      "id":3,
+      "name": "Apple IPhone  13",
+      "price": 800,
+      "description": "Il prodotto di punta di Apple",
+      "url":"assets/img/iphone.jpg"
+    },
+    {
+      "id":4,
+      "name": "Nokia 6630",
+      "price": 50,
+      "description": "Per fissare i chiodi al muro",
+      "url":"assets/img/brick.jpg"
+    }
+  ]
+}
